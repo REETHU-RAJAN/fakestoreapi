@@ -1,0 +1,27 @@
+1)api for adding new category
+----------------------------
+url=http://127.0.0.1:8000/fakestore/api/category/
+method:post
+data:{"name":"electronics}
+authorization:nill
+====================================================
+2)api for fecting a category details
+------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/category/{id}/
+method:get
+data:nill
+authorization:nill
+===================================================
+3)api for deleting a category
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/category/{id}/
+method:delete
+data:nill
+authorization:nill
+================================================
+4)api for listing all category
+-----------------------------
+url=http://127.0.0.1:8000/fakestore/api/category/
+method:get
+data:nill
+authorization:nill
