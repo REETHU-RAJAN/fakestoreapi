@@ -1,3 +1,18 @@
+!!)registration
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/register
+method:post
+data:{username:"name",password:"hgfjj",email:"email@"}
+authorization:nill
+================================================
+!!!)get token
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/token
+method:post
+data:{username:"name",password:"hgfjj"}
+authorization:nill
+================================================
+
 1)api for adding new category
 ----------------------------
 url=http://127.0.0.1:8000/fakestore/api/category/
@@ -25,3 +40,40 @@ url=http://127.0.0.1:8000/fakestore/api/category/
 method:get
 data:nill
 authorization:nill
+================================================
+5)api for ADDING A PRODUCT
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/category/{C-id}/add_products/
+method:post
+data:{name:"prodctname",price:145,description:"describe",image:"image"}
+authorization:token
+================================================
+================================================
+6)api for list PRODUCT
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/products/
+method:get
+data:nill
+authorization:token
+================================================================================================
+7)api for ADDING A PRODUCT detail
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/products/{p.id}
+method:get
+data:nill
+authorization:token
+================================================================================================
+8)api for product update
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/products/{p.id}
+method:put
+data:{name:"prodctname",price:145,description:"describe",image:"image"}
+authorization:token
+================================================================================================
+9)api for deleting A PRODUCT
+------------------------------------------
+url=http://127.0.0.1:8000/fakestore/api/products/{p.id}
+method:delete
+data:nill
+authorization:token
+================================================================================================
